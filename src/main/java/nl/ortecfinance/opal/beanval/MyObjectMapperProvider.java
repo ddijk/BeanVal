@@ -46,8 +46,8 @@ public class MyObjectMapperProvider implements ContextResolver<ObjectMapper> {
         result.enable(DeserializationFeature.FAIL_ON_NUMBERS_FOR_ENUMS);
         result.enable(DeserializationFeature.FAIL_ON_NULL_FOR_PRIMITIVES);
         result.setDateFormat(new SimpleDateFormat("yyyy-MM"));
-        result.setSerializationInclusion(JsonInclude.Include.NON_NULL);
-        result.setSerializationInclusion(JsonInclude.Include.NON_EMPTY);
+ //      result.setSerializationInclusion(JsonInclude.Include.NON_NULL);
+    //   result.setSerializationInclusion(JsonInclude.Include.NON_EMPTY);
 //        SimpleModule module = new SimpleModule();
 //        module.addSerializer(IncomePlanningSimulationRequest.class, null)
 //        result.registerModule(module);

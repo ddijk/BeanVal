@@ -10,6 +10,8 @@ public class Person {
 
     @NotNull
     Integer age;
+    
+    Integer housenumber;
 
     public Person() {
     }
@@ -37,7 +39,17 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" + "naam=" + naam + ", age=" + age + '}';
+        return "Person{" + "naam=" + naam + ", age=" + age + ", housenumber=" + housenumber + '}';
     }
 
+
+    public Integer getHousenumber() {
+        return housenumber;
+    }
+
+    public void setHousenumber(Integer housenumber) {
+        this.housenumber = housenumber;
+    }
+
+    
 }
